@@ -21,20 +21,20 @@
 </head>
 <body>
 
-    <h1>Répertoire de test de clic</h1>
-    <p>Utilise tes scripts de spam sur ces boutons !</p>
+    <h1>Clicker</h1>
+    <p>Teste tout tes spam</p>
 
     <div class="container">
-        <button class="instant" id="btn-1">Bouton 1</button>
-        <button class="instant" id="btn-2">Bouton 2</button>
-        <button class="instant" id="btn-3">Bouton 3</button>
-        <button class="instant" id="btn-4">Bouton 4</button>
-        <button class="instant" id="btn-5">Bouton 5</button>
-        <button class="instant" id="btn-6">Bouton 6</button>
+        <button class="instant" id="btn1">Bouton 1</button>
+        <button class="instant" id="btn2">Bouton 2</button>
+        <button class="instant" id="btn3">Bouton 3</button>
+        <button class="instant" id="btn4">Bouton 4</button>
+        <button class="instant" id="btn5">Bouton 5</button>
+        <button class="instant" id="btn6">Bouton 6</button>
     </div>
 
     <div id="log-container">
-        <div class="log-entry">> Système prêt. En attente de clics...</div>
+        <div class="log-entry">> Qu'est-ce que t'attends pour cliquer ?</div>
     </div>
 
     <script>
@@ -47,7 +47,7 @@
                 clickCount++;
                 const entry = document.createElement('div');
                 entry.className = 'log-entry';
-                entry.textContent = `[${clickCount}] CLIC DÉTECTÉ sur : ${button.id} à ${new Date().toLocaleTimeString()}`;
+                entry.textContent = `[${clickCount}] t'a cliqué sur : ${button.id} à ${new Date().toLocaleTimeString()}`;
                 
                 // Ajouter au début du log
                 logContainer.insertBefore(entry, logContainer.firstChild);
